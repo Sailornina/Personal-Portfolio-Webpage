@@ -91,8 +91,6 @@ nav>ul {
     margin: 0 1rem;
 }
 
-}
-
 .nav-list a {
     display: block;
     font-size: 2.2rem;
@@ -107,6 +105,7 @@ nav>ul {
     background-color: var(--main-olive);
     text-align: center;
     padding: 10rem 2rem;
+    width: 100%;
 }
 
 .projects-header {
@@ -138,7 +137,6 @@ nav>ul {
 .project-tile {
     font-size: 2rem;
     background: var(--main-pink);
-    transition: 0.3s ease-out;
 }
 
 .contact-section {
@@ -164,9 +162,31 @@ nav>ul {
 
 .contact-detail {
     font-size: 1.4rem;
+    padding: 0 2rem;
 }
 
 footer {
     background-color: var(--main-pink);
     text-align: center;
+    font-size: small;
+    width: 100%;
 }
+
+/* Media Queries */
+
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+@media (max-width:28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+}
+
